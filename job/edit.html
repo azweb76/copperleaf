@@ -7,10 +7,10 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- #BeginEditable "doctitle" -->
-	<title>Copper Leaf - Phase Management System</title>
-	<!-- #EndEditable -->
-	<!-- Bootstrap core CSS -->
+		<!-- #BeginEditable "doctitle" -->
+		<title>Copper Leaf - Phase Management System</title>
+		<!-- #EndEditable -->
+		<!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
@@ -77,47 +77,69 @@
 <!-- #BeginEditable "body" -->
 <div class="row">
   <div class="panel panel-primary">
-	  <div class="panel-heading">Vendors</div>
+	  <div class="panel-heading">Job</div>
 	  <div class="panel-body">
-		  <div class="row">
+	    <form class="form-horizontal" role="form">
 				<div class="col-sm-12">
-					<table class = "table table-hover">
-					  <thead>
-					    <tr>
-					       <th>Vendor</th>
-					       <th>Address</th>
-					       <th>Contact</th>
-					    </tr>
-					  </thead>
-					  <tbody>
-					    <tr>
-					       <td><a href="edit.html">Frank&#39;s Conrete</a></td>
-					       <td>123 E Main St, Chandler, AZ 85224</td>
-					       <td>Frank (480-123-4567)</td>
-					    </tr>
-					    <tr>
-					       <td><a href="edit.html">Green Landscaping</a></td>
-					       <td>3456 N 7th St, Phoenix, AZ 85283</td>
-					       <td>Jane (480-234-5678)</td>
-					    </tr>
-					    <tr>
-					       <td><a href="edit.html">Rock Company</a></td>
-					       <td>10978 E. Shea, Scottsdale, AZ 85250</td>
-					       <td>Steve (480-456-7890)</td>
-					    </tr>
-					  </tbody>
-					</table>
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active"><a href="#">Details</a></li>
+						<li role="presentation"><a href="#">Timeline</a></li>
+						<li role="presentation"><a href="#">History</a></li>
+					</ul>
+			    <fieldset>
+						<div class="col-sm-12">
+						  <div class="form-group">
+						    <label class="col-sm-2 control-label" for="emailField">Name</label>
+						    <div class="col-sm-10">
+						    <input type="email" id="emailField" class="form-control" placeholder="Name">
+						    </div>
+						  </div>
+		          <div class="form-group">
+		            <label class="col-sm-2 control-label" for="textinput">Address</label>
+		            <div class="col-sm-10">
+		              <input type="text" placeholder="Address" class="form-control">
+		            </div>
+		          </div>
+		          <div class="form-group">
+		            <label class="col-sm-2 control-label" for="textinput">City</label>
+		            <div class="col-sm-10">
+		              <input type="text" placeholder="City" class="form-control">
+		            </div>
+		          </div>
+		          <div class="form-group">
+		            <label class="col-sm-2 control-label" for="textinput">State</label>
+		            <div class="col-sm-4">
+		              <input type="text" placeholder="State" class="form-control">
+		            </div>
+		            <label class="col-sm-2 control-label" for="textinput">Zip</label>
+		            <div class="col-sm-4">
+		              <input type="text" placeholder="Post Code" class="form-control">
+		            </div>
+		          </div>
+		          <div class="form-group">
+		            <label class="col-sm-2 control-label" for="textinput">Contact</label>
+		            <div class="col-sm-4">
+		              <input type="text" placeholder="Contact" class="form-control">
+		            </div>
+		            <label class="col-sm-2 control-label" for="textinput">Phone</label>
+		            <div class="col-sm-4">
+		              <input type="text" placeholder="Contact Phone" class="form-control">
+		            </div>
+		          </div>
+		          <div class="form-group">
+		            <div class="col-sm-offset-2 col-sm-10">
+		              <div class="pull-right">
+		                <a href="list.html" class="btn btn-default">Cancel</a>
+		                <a href="list.html" class="btn btn-primary">Save</a>
+		              </div>
+		            </div>
+		          </div>
+						</div>
+	        </fieldset>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<a role="button" href="edit.html" class="btn btn-primary btn-xs">
-						New Vendor
-					</a>
-				</div>
-			</div>
-	  </div>
-	</div>
+      </form>
+    </div>
+  </div>
 </div>
 <!-- #EndEditable -->
 </div>

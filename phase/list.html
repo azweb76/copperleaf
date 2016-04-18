@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- #BeginTemplate "../template.dwt" -->
@@ -35,15 +35,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li class=""><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="../vendor/list.html">Vendors</a></li>
-            <li><a href="list.html">Phases</a></li>
+            <li><a href="list.html">Vendors</a></li>
+            <li><a href="../phase/list.html">Phases</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="../user/list.html">Users</a></li>
-          </ul> 
+          </ul>
         </li>
          <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports<span class="caret"></span></a>
@@ -51,7 +51,7 @@
             <li><a href="../report/report1.html">Report1</a></li>
             <li><a href="../report/report2.html">Report2</a></li>
           </ul>
-        </li> 
+        </li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -76,18 +76,47 @@
     <div class="container theme-showcase" role="main">
 <!-- #BeginEditable "body" -->
 <div class="row">
-    <div class="panel panel-default">
-	  <div class="panel-heading">Vendors</div>
+  <div class="panel panel-primary">
+	  <div class="panel-heading">Phases</div>
 	  <div class="panel-body">
-	    <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>
+		  <div class="row">
+				<div class="col-sm-12">
+					<table class = "table table-hover">
+					  <thead>
+					    <tr>
+					       <th>Phase</th>
+					       <th>Is Default?</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					       <td><a href="edit.html">Phase 1</a></td>
+					       <td>Yes</td>
+					    </tr>
+					    <tr>
+					       <td><a href="edit.html">Phase 2</a></td>
+					       <td>Yes</td>
+					    </tr>
+					    <tr>
+					       <td><a href="edit.html">Phase 3</a></td>
+					       <td>No</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<a role="button" href="edit.html" class="btn btn-primary btn-xs">
+						New Phase
+					</a>
+				</div>
+			</div>
 	  </div>
 	</div>
-  </div>
+</div>
 <!-- #EndEditable -->
-</div> 
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/ie10-viewport-bug-workaround.js"></script>
