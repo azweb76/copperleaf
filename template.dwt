@@ -12,6 +12,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- Copperleaf Customization -->
+	<link href="css/copperleaf.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 </head>
@@ -27,7 +29,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">[LOGO] Phase Management System</a>
+      <a class="navbar-brand" href="#"><img src="images/clp_logo.png">Phase Management System</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

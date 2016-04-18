@@ -1,0 +1,8 @@
+.navbar-brand img {
+    position: relative;
+    float: left;
+    width: 75px;
+    height: 40px;
+    top: -7px;
+    left: -5px;
+}
