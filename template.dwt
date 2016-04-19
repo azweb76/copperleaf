@@ -35,13 +35,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="job/list.html">Jobs</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="vendor/list.html">Vendors</a></li>
             <li><a href="phase/list.html">Phases</a></li>
-						<li><a href="client/list.html">Clients</a></li>
+			<li><a href="client/list.html">Clients</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="user/list.html">Users</a></li>
           </ul>
@@ -56,7 +57,7 @@
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Client Name">
+          <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
