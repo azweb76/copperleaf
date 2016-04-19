@@ -65,7 +65,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chris Cadena<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Profile</a></li>
             <li role="separator" class="divider"></li>
@@ -90,28 +90,138 @@
 					    <tr>
 					       <th>Phase</th>
 					       <th>Is Default?</th>
+                            <th>Prerequisites</th>
 					    </tr>
 					  </thead>
 					  <tbody>
-					    <tr>
-					       <td><a href="edit.html">Phase 1</a></td>
-					       <td>Yes</td>
+                        <tr>
+                            <td><a href="edit.html">Permit</a></td>
+					        <td>Yes</td>
+                            <td>None</td>
 					    </tr>
 					    <tr>
-					       <td><a href="edit.html">Phase 2</a></td>
-					       <td>Yes</td>
+					        <td><a href="edit.html">Pre-site Inspection</a></td>
+					        <td>No</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Permit<br/>">Permit</a></td>
 					    </tr>
-					    <tr>
-					       <td><a href="edit.html">Phase 3</a></td>
-					       <td>No</td>
-					    </tr>
+                        <tr>
+                            <td><a href="edit.html">Layout</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Permit<br/>- Pre-site Inspection">Permit <b>. . .</b></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Excavation</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Layout">Layout</b></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Plumbing</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Excavation">Excavation</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Steel</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Excavation">Excavation</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Electrical</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Steel">Steel</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Inspection Electrical</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Electrical">Electrical</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Shotcrete</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Inspection Electrical">Inspection Electrical</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Fountain</a></td>
+                            <td>No</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Shotcrete">Shotcrete</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Water Fall</a></td>
+                            <td>No</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Shotcrete">Shotcrete</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Waterline Tile</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Shotcrete">Shotcrete</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Coping</a></td>
+                            <td>No</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Shotcrete<br/>- Fountain<br/>- Water Fall">Shotcrete <b>. . .</b></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Deck</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Coping<br/>- Shotcrete">Coping <b>. . .</b></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Landscape On-Site</a></td>
+                            <td>No</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Shotcrete<br/>- Coping<br/>- Deck">Shotcrete <b>. . .</b></a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="edit.html">Clean Up Shell</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Waterline Tile<br/>- Coping<br/>- Deck">Waterline Tile <b>. . .</b></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Barrier</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Clean Up Shell<br/>- Coping<br/>- Deck">Clean Up Shell <b>. . .</b></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Inspection Barrier</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Barrier">Barrier</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">PebbleTec</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Inspection Barrier">Inspection Barrier</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Plaster</a></td>
+                            <td>No</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Inspection Barrier">Inspection Barrier</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Acid Wash</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- PebbleTec">PebbleTec</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Automation Programming</a></td>
+                            <td>No</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Acid Wash<br/>- Plaster">Acid Wash <b>. . .</b></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Start Up</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Acid Wash<br/>- Plaster<br/>- Automation Programming">Acid Wash <b>. . .</b></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="edit.html">Final Walk Through</a></td>
+                            <td>Yes</td>
+                            <td><a href="#" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Start Up">Start Up</a></td>
+                        </tr>
 					  </tbody>
 					</table>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-4">
-					<a role="button" href="edit.html" class="btn btn-primary btn-xs">
+					<a role="button" href="new.html" class="btn btn-primary btn-xs">
 						New Phase
 					</a>
 				</div>

@@ -65,7 +65,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chris Cadena<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Profile</a></li>
             <li role="separator" class="divider"></li>
@@ -81,48 +81,77 @@
 <!-- #BeginEditable "body" -->
 <div class="row">
   <div class="panel panel-primary">
-	  <div class="panel-heading">Vendor</div>
+	  <div class="panel-heading">Edit Vendor</div>
 	  <div class="panel-body">
 	    <form class="form-horizontal" role="form">
 	      <fieldset>
 				  <div class="form-group">
 				    <label class="col-sm-2 control-label" for="emailField">Name</label>
 				    <div class="col-sm-10">
-				    <input type="email" id="emailField" class="form-control" placeholder="Name">
+				    <input type="email" id="emailField" class="form-control" placeholder="Name" value="Lone Star Landscaping">
 				    </div>
 				  </div>
           <div class="form-group">
             <label class="col-sm-2 control-label" for="textinput">Address</label>
             <div class="col-sm-10">
-              <input type="text" placeholder="Address" class="form-control">
+              <input type="text" placeholder="Address" class="form-control" value="19305 N. 28th St.">
             </div>
           </div>
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="textinput">City</label>
-            <div class="col-sm-10">
-              <input type="text" placeholder="City" class="form-control">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="textinput">State</label>
-            <div class="col-sm-4">
-              <input type="text" placeholder="State" class="form-control">
-            </div>
-            <label class="col-sm-2 control-label" for="textinput">Zip</label>
-            <div class="col-sm-4">
-              <input type="text" placeholder="Post Code" class="form-control">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="textinput">Contact</label>
-            <div class="col-sm-4">
-              <input type="text" placeholder="Contact" class="form-control">
-            </div>
-            <label class="col-sm-2 control-label" for="textinput">Phone</label>
-            <div class="col-sm-4">
-              <input type="text" placeholder="Contact Phone" class="form-control">
-            </div>
-          </div>
+              <div class="form-group">
+                  <label class="col-sm-2 control-label" for="textinput">City, State, Zip</label>
+                  <div class="col-sm-5">
+                      <input type="text" placeholder="City" class="form-control" value="Phoenix">
+                  </div>
+                  <div class="col-sm-2">
+                      <input type="text" placeholder="State" class="form-control" value="AZ">
+                  </div>
+                  <div class="col-sm-3">
+                      <input type="text" placeholder="Zip Code" class="form-control" value="85050">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="col-sm-2 control-label" for="textinput">Contact</label>
+                  <div class="col-sm-4">
+                      <input type="text" placeholder="Contact" class="form-control" value="Jamie Cadena">
+                  </div>
+                  <div class="col-sm-3">
+                      <input type="text" placeholder="Contact Email" class="form-control" value="jamie@lonestaraz.com">
+                  </div>
+                  <div class="col-sm-3">
+                      <input type="text" placeholder="Contact Phone" class="form-control" value="602-992-7827">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="col-sm-2 control-label" for="preField">Qualified Phases<br/><span style="font-weight:300; font-size: 10px;">Hold the CTRL(Windows) or CMD(Mac) to select multiple.</span></label>
+                  <div class="col-sm-10">
+                      <select multiple class="form-control" id="preField" size="10">
+                          <option>Permit</option>
+                          <option>Pre-site Inspection</option>
+                          <option selected>Layout</option>
+                          <option>Excavation</option>
+                          <option>Plumbing</option>
+                          <option>Steel</option>
+                          <option>Electrical</option>
+                          <option>Inspection Electrical</option>
+                          <option>Shotcrete</option>
+                          <option selected>Fountain</option>
+                          <option selected>Water Fall</option>
+                          <option selected>Waterline Tile</option>
+                          <option selected>Coping</option>
+                          <option selected>Deck</option>
+                          <option selected>Landscape On-Site</option>
+                          <option selected>Clean Up Shell</option>
+                          <option selected>Barrier</option>
+                          <option>Inspection Barrier</option>
+                          <option>Pebble Tec</option>
+                          <option>Plaster</option>
+                          <option>Acid Wash</option>
+                          <option>Automation Programming</option>
+                          <option>Start Up</option>
+                          <option>Final Walk Through</option>
+                      </select>
+                  </div>
+              </div>
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
               <div class="pull-right">
