@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../template.dwt" -->
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- #BeginEditable "doctitle" -->
+	<title>Copper Leaf - Phase Management System</title>
+	<!-- #EndEditable -->
+	<!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- Copperleaf Customization -->
+	<link href="../css/copperleaf.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+</head>
+
+<body role="document">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="../images/clp_logo.png">Phase Management System</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="../dashboard.html">Home</a></li>
+        <li><a href="../job/list.html">Jobs</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../vendor/list.html">Vendors</a></li>
+            <li><a href="list.html">Phases</a></li>
+			<li><a href="../client/list.html">Clients</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="../user/list.html">Users</a></li>
+          </ul>
+        </li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../report/report1.html">Construction Schedule Report</a></li>
+            <li><a href="../report/report2.html">Job History Report</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chris Cadena<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container theme-showcase" role="main">
+<!-- #BeginEditable "body" -->
+<div class="row">
+  <div class="panel panel-primary">
+	  <div class="panel-heading">New Phase</div>
+	  <div class="panel-body">
+	    <form class="form-horizontal" role="form">
+	      <fieldset>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label" for="nameField">Name</label>
+				    <div class="col-sm-10">
+				    	<input type="email" id="nameField" class="form-control" placeholder="Name">
+				    </div>
+				  </div>
+					<div class="form-group checkbox">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-10">
+					  	<label>
+						    <input type="checkbox" value="">
+								Is Default
+					  	</label>
+						</div>
+					</div>
+              <br/>
+              <div class="form-group">
+                  <label class="col-sm-2 control-label" for="preField">Prerequisites<br/><span style="font-weight:300; font-size: 10px;">Hold the CTRL(Windows) or CMD(Mac) to select multiple.</span></label>
+                  <div class="col-sm-10">
+                      <select multiple class="form-control" id="preField" size="10">
+                          <option>Permit</option>
+                          <option>Pre-site Inspection</option>
+                          <option>Layout</option>
+                          <option>Excavation</option>
+                          <option>Plumbing</option>
+                          <option>Steel</option>
+                          <option>Electrical</option>
+                          <option>Inspection Electrical</option>
+                          <option>Shotcrete</option>
+                          <option>Fountain</option>
+                          <option>Water Fall</option>
+                          <option>Waterline Tile</option>
+                          <option>Coping</option>
+                          <option>Deck</option>
+                          <option>Landscape On-Site</option>
+                          <option>Clean Up Shell</option>
+                          <option>Barrier</option>
+                          <option>Inspection Barrier</option>
+                          <option>Pebble Tec</option>
+                          <option>Plaster</option>
+                          <option>Acid Wash</option>
+                          <option>Automation Programming</option>
+                          <option>Start Up</option>
+                          <option>Final Walk Through</option>
+                      </select>
+                      </div>
+                </div>
+					<div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="pull-right">
+                <a href="list.html" class="btn btn-default">Cancel</a>
+                <a href="list.html" class="btn btn-primary">Save</a>
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- #EndEditable -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+<!-- #EndTemplate -->
+</html>
