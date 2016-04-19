@@ -1,8 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- #BeginTemplate "../template.dwt" -->
-
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,37 +36,14 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li class=""><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="vendor/list.html">Vendors</a></li>
-	            <li><a href="phase/list.html">Phases</a></li>
-							<li><a href="client/list.html">Clients</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="user/list.html">Users</a></li>
-	          </ul>
-	        </li>
-	         <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports<span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-							<li><a href="report/report1.html">Construction Schedule Report</a></li>
-	            <li><a href="report/report2.html">Job History Report</a></li>
-	          </ul>
-	        </li>
 	      </ul>
-	      <form class="navbar-form navbar-left" role="search">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Client Name">
-	        </div>
-	        <button type="submit" class="btn btn-default">Submit</button>
-	      </form>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe<span class="caret"></span></a>
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="#">Profile</a></li>
+	            <li><a href="#">Register</a></li>
 	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Log Out</a></li>
+	            <li><a href="#">Log In</a></li>
 	          </ul>
 	        </li>
 	      </ul>
@@ -79,64 +54,44 @@
     <div class="container theme-showcase" role="main">
 <!-- #BeginEditable "body" -->
 <div class="row">
-  <div class="panel panel-primary">
-	  <div class="panel-heading">Jobs</div>
-	  <div class="panel-body">
-		  <div class="row">
-				<div class="col-sm-12">
-					<table class = "table table-hover">
-					  <thead>
-					    <tr>
-							<th>Job</th>
-					       <th>Client</th>
-					       <th>Location</th>
-								 <th>Timeline</th>
-								 <th>Start Date</th>
-								 <th>End Date</th>
-								 <th></th>
-					    </tr>
-					  </thead>
-					  <tbody>
-					    <tr>
-							<td>Doe Pool</td>
-					       <td><a href="client/edit.html">John Doe</a></td>
-					       <td>1234 E Main St, Chandler, AZ 85224</td>
-								 <td><a href="job/timeline.html">Pool Build</a></td>
-								 <td>Mar 14, 2016</td>
-								 <td>Jun 5, 2016</td>
-								 <td><a href="job/edit.html">Edit</a></td>
-					    </tr>
-					    <tr>
-							<td>Smith Pool & Spa</td>
-								<td><a href="client/edit.html">Frank Smith</a></td>
-								<td>3456 N 7th St, Phoenix, AZ 85230</td>
-								<td><a href="job/timeline.html">Spa</a></td>
-								<td>Apr 1, 2016</td>
-								<td>May 26, 2016</td>
-								<td><a href="job/edit.html">Edit</a></td>
-					    </tr>
-					    <tr>
-							<td>Doe Landscape/Pool</td>
-								<td><a href="client/edit.html">John Doe</a></td>
-								<td>10345 E Shea Blvd, Scottsdale, AZ 85250</td>
-								<td><a href="job/timeline.html">Pool</a></td>
-								<td>Feb 3, 2016</td>
-								<td>Apr 18, 2016</td>
-								<td><a href="job/edit.html">Edit</a></td>
-					    </tr>
-					  </tbody>
-					</table>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<a role="button" href="edit.html" class="btn btn-primary btn-xs">
-						New Job
-					</a>
-				</div>
-			</div>
-	  </div>
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+	  <div class="panel panel-primary">
+		  <div class="panel-heading">Log In</div>
+		  <div class="panel-body">
+				<form class="form-horizontal" role="form">
+					<div class="col-sm-12">
+				    <fieldset>
+							<div class="row p-t-12">
+								<div class="col-sm-12">
+								  <div class="form-group">
+								    <label class="col-sm-2 control-label" for="usernameField">Email</label>
+								    <div class="col-sm-10">
+								    <input type="email" id="emailField" class="form-control" placeholder="Username">
+								    </div>
+								  </div>
+				          <div class="form-group">
+				            <label class="col-sm-2 control-label" for="textinput">Password</label>
+				            <div class="col-sm-10">
+				              <input type="password" placeholder="Password" class="form-control">
+				            </div>
+				          </div>
+				          <div class="form-group">
+				            <div class="col-sm-offset-2 col-sm-10">
+				              <div class="pull-right">
+				                <a href="job/list.html" class="btn btn-primary">Log In</a>
+				              </div>
+				            </div>
+				          </div>
+								</div>
+							</div>
+		        </fieldset>
+					</div>
+	      </form>
+		  </div>
+		</div>
 	</div>
+	<div class="col-sm-3"></div>
 </div>
 <!-- #EndEditable -->
 </div>
