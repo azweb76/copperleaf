@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- #BeginTemplate "../template.dwt" -->
@@ -14,6 +14,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="../css/copperleaf.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 </head>
@@ -35,11 +36,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="../vendor/list.html">Vendors</a></li>
+            <li><a href="list.html">Vendors</a></li>
             <li><a href="../phase/list.html">Phases</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="../user/list.html">Users</a></li>
@@ -77,39 +78,50 @@
 <!-- #BeginEditable "body" -->
 <div class="row">
   <div class="panel panel-primary">
-	  <div class="panel-heading">Phases</div>
+	  <div class="panel-heading">Job - History</div>
 	  <div class="panel-body">
-		  <div class="row">
-				<div class="col-sm-12">
-					<table class = "table table-hover">
-					  <thead>
-					    <tr>
-					       <th>Phase</th>
-					       <th>Is Default?</th>
-					    </tr>
-					  </thead>
-					  <tbody>
-					    <tr>
-					       <td><a href="edit.html">Phase 1</a></td>
-					       <td>Yes</td>
-					    </tr>
-					    <tr>
-					       <td><a href="edit.html">Phase 2</a></td>
-					       <td>Yes</td>
-					    </tr>
-					    <tr>
-					       <td><a href="edit.html">Phase 3</a></td>
-					       <td>No</td>
-					    </tr>
-					  </tbody>
-					</table>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<a role="button" href="edit.html" class="btn btn-primary btn-xs">
-						New Phase
-					</a>
+			<div class="col-sm-12">
+				<ul class="nav nav-tabs">
+					<li role="presentation"><a href="edit.html">Details</a></li>
+					<li role="presentation"><a href="timeline.html">Timelines</a></li>
+					<li role="presentation" class="active"><a href="history.html">History</a></li>
+				</ul>
+					<div class="row">
+						<div class="col-sm-12">
+							<table class = "table table-hover">
+							  <thead>
+							    <tr>
+										<th>Timeline</th>
+										<th>Phase</th>
+										<th>State</th>
+										<th>Changed By</th>
+										<th>Date</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+										<td>Pool Build</td>
+										<td><a href="#">Phase 1</a></td>
+										<td>In Progress</td>
+										<td>Vendor 1</td>
+										<td>Apr 23, 2016</td>
+							    </tr>
+							    <tr>
+										<td><a href="#">Phase 2</a></td>
+										<td>In Progress</td>
+										<td>Vendor 1</td>
+										<td>Apr 23, 2016</td>
+							    </tr>
+							    <tr>
+										<td><a href="#">Phase 1</a></td>
+										<td>In Progress</td>
+										<td>Vendor 1</td>
+										<td>Apr 23, 2016</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 	  </div>
