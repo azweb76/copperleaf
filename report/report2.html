@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../template.dwt" -->
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- #BeginEditable "doctitle" -->
+	<title>Copper Leaf - Phase Management System</title>
+	<!-- #EndEditable -->
+	<!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- Copperleaf Customization -->
+	<link href="../css/copperleaf.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+</head>
+
+<body role="document">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="../images/clp_logo.png">Phase Management System</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="../dashboard.html">Home</a></li>
+                <li><a href="../job/list.html">Jobs</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../vendor/list.html">Vendors</a></li>
+                        <li><a href="../phase/list.html">Phases</a></li>
+                        <li><a href="../client/list.html">Clients</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../user/list.html">Users</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="report1.html">Construction Schedule Report</a></li>
+                        <li><a href="report2.html">Job History Report</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chris Cadena<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container theme-showcase" role="main">
+<!-- #BeginEditable "body" -->
+
+    <div class="container theme-showcase" role="main">
+        <div class="row">
+
+
+
+            <form class="form-horizontal" role="form">
+                <div class="col-sm-12">
+                    <div class="row p-t-12">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="col-sm-1" style="padding: 0">
+                                    <a href="#" class="btn btn-primary" style="width: 100%">Job</a>
+                                </div>
+                                <div class="col-sm-1" style="padding: 0 10px 0 5px">
+                                    <input type="text" class="form-control" readonly value="Clayton Pool" style="width: 100%">
+                                </div>
+
+                                <div class="col-sm-1" style="padding: 0">
+                                    <a href="#" class="btn btn-primary" style="width: 100%">Timeline</a>
+                                </div>
+                                <div class="col-sm-1" style="padding: 0 10px 0 5px">
+                                    <input type="text" class="form-control" readonly value="New Pool" style="width: 100%">
+                                </div>
+
+                                <div class="col-sm-1" style="padding: 0">
+                                    <a href="#" class="btn btn-primary" style="width: 100%">State</a>
+                                </div>
+                                <div class="col-sm-1" style="padding: 0 10px 0 5px">
+                                    <input type="text" class="form-control" readonly value="Complete" style="width: 100%">
+                                </div>
+
+                                <div class="col-sm-1" style="padding: 0">
+                                    <a href="#" class="btn btn-primary" style="width: 100%">Authorized</a>
+                                </div>
+                                <div class="col-sm-1" style="padding: 0 10px 0 5px">
+                                    <input type="text" class="form-control" readonly value="All" style="width: 100%">
+                                </div>
+
+                                <div class="col-sm-1" style="padding: 0">
+                                    <a href="#" class="btn btn-primary" style="width: 100%">Vendor</a>
+                                </div>
+                                <div class="col-sm-1" style="padding: 0 10px 0 5px">
+                                    <input type="text" class="form-control" readonly value="All" style="width: 100%">
+                                </div>
+
+                                <div class="col-sm-1" style="padding: 0">
+                                    <a href="#" class="btn btn-primary" style="width: 100%">Date</a>
+                                </div>
+                                <div class="col-sm-1" style="padding: 0 0 0 5px">
+                                    <input type="text" class="form-control" readonly value="All" style="width: 100%">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+
+
+        </div>
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 style="margin: 0; font-size: 22px;">Job History Report</h4>
+                    <hr style="margin: 5px 0 2px 0; border-top: 2px solid #eee"/>
+                    <span style="padding-right: 5%">Job: <b>Clayton Pool</b></span>
+                    <span style="padding-right: 5%">Timeline: <b>New Pool</b></span>
+                    <span style="padding-right: 5%">State: <b>Completed</b></span>
+                    <span style="padding-right: 5%">Authorized: <b>All</b></span>
+                    <span style="padding-right: 0">Date: <b>All</b></span>
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class = "table table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>Phase</th>
+                                        <th>State</th>
+                                        <th>Authorized</th>
+                                        <th>Date</th>
+                                        <th>Vendor</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Permit</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>03/13/16</td>
+                                        <td>CLP Internal</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Layout</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>03/16/16</td>
+                                        <td>CLP Internal</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Excavation</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>03/20/16</td>
+                                        <td>Affordable Bobcat</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Plumbing</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>03/24/16</td>
+                                        <td>Leak Free Pool Plumbers</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Steel</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>03/26/16</td>
+                                        <td>The ReBar Guys</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Electrical</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>03/27/16</td>
+                                        <td>Zippy Electrical</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Inspection Electrical</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>04/03/16</td>
+                                        <td>City of Chandler</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Shotcrete</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>04/14/16</td>
+                                        <td>SuperCRETE</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../job/timeline.html">Waterline Tile</a></td>
+                                        <td>Completed</td>
+                                        <td>Chris C.</td>
+                                        <td>04/28/16</td>
+                                        <td>Accent Tilers</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="pull-right">
+                <a href="list.html" class="btn btn-default">Cancel</a>
+                <a href="list.html" class="btn btn-primary">Print Report</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- #EndEditable -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+<!-- #EndTemplate -->
+</html>
