@@ -1,4 +1,4 @@
-.navbar-brand img {
+﻿.navbar-brand img {
     position: relative;
     float: left;
     width: 75px;
@@ -9,4 +9,10 @@
 
 .p-t-12 {
   padding-top: 16px
+}
+.p-lg-b {
+  padding-bottom: 16px;
+}
+.glyphicon {
+	margin-top: -2px;
 }
