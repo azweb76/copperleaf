@@ -7,12 +7,17 @@
     left: -5px;
 }
 
-.p-t-12 {
+.p-t-12, .p-lg-t {
   padding-top: 16px
 }
+
 .p-lg-b {
   padding-bottom: 16px;
 }
 .glyphicon {
 	margin-top: -2px;
+}
+
+hr {
+  margin: 5px 0 2px 0; border-top: 2px solid #fff
 }
