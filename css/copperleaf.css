@@ -1,4 +1,7 @@
-﻿.navbar-brand img {
+body, a, div, td, button, input {
+  font-family: Tahoma, Verdana
+}
+.navbar-brand img {
     position: relative;
     float: left;
     width: 75px;
