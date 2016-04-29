@@ -195,37 +195,20 @@
 														<td><a href="#">Coping</a></td>
 														<td>Scheduled</td>
 														<td><a href="../vendor/edit.html">Lone Star Landscaping</a></td>
-														<td>05/02/16
-															<a role="button" href="#" class="btn btn-primary btn-xs">COM</a>
-															<a role="button" href="#" class="btn btn-primary btn-xs">CNL</a>
-															<a role="button" href="#" class="btn btn-primary btn-xs">RES</a>
-															<a role="button" href="#" class="btn btn-primary btn-xs">VEN</a></td>
+														<td>05/02/16</td>
 														<td><a href="javascript:void(0)" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Shotcrete<br/>- Fountain<br/>- Water Fall">Shotcrete <b>. . .</b></a></td>
 													</tr>
 													<tr>
 														<td><a href="#">Deck</a></td>
 														<td>Ready to Schedule</td>
 														<td><a href="../vendor/edit.html">Lone Star Landscaping</a></td>
-														<td style="width:260px"><div class="input-group">
-															<input type="text" id="phaseField" class="form-control" placeholder="Phase"  aria-describedby="basic-addon1">
-																<span class="input-group-btn">
-							        								<button class="btn btn-default glyphicon glyphicon-calendar" type="button"></button>
-							      								</span></div>
-
-															</td>
+														<td></td>
 														<td><a href="javascript:void(0)" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Coping<br/>- Shotcrete">Coping <b>. . .</b></a></td>
 													</tr>
 													<tr>
 														<td><a href="#">Clean Up Shell</a></td>
 														<td>Ready for Vendor</td>
-														<td>
-															<select class="form-control" style="width:inherit">
-																<option>Select Vendor</option>
-																<option>Lone Star Landscaping</option>
-																<option>We Clean Stuff</option>
-																<option>Paul Powerwash</option>
-															</select>
-														</td>
+														<td></td>
 														<td></td>
 														<td><a href="javascript:void(0)" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Waterline Tile<br/>- Coping<br/>- Deck">Waterline Tile <b>. . .</b></a></td>
 													</tr>
@@ -265,7 +248,7 @@
 														<td><a href="javascript:void(0)" data-toggle="popover" data-trigger="focus" title="Prerequisites:" data-html="true" data-content="- Acid Wash<br/>- Plaster<br/>- Automation Programming">Acid Wash <b>. . .</b></a></td>
 													</tr>
 													<tr>
-														<td><a href="#">Final Walk Through</a></td>
+														<td><a href="#" data-toggle="modal" data-target="#phaseModal">Final Walk Through</a></td>
 														<td>On Hold</td>
 														<td></td>
 														<td></td>
@@ -275,15 +258,15 @@
 												</table>
 												<div class="row">
 													<div class="col-sm-12">
-														<a role="button" data-toggle="modal" data-target="#phaseAddModal" class="btn btn-info btn-xs">
+														<a role="button" data-toggle="modal" data-target="#phaseModal" class="btn btn-info btn-xs">
 															Add Phase
 														</a>
-														<a role="button" data-toggle="modal" data-target="#phaseRemoveModal" class="btn btn-info btn-xs">
+														<!--<a role="button" data-toggle="modal" data-target="#phaseRemoveModal" class="btn btn-info btn-xs">
 															Remove Phase
 														</a>
 														<a href="list.html" role="button" class="btn btn-info btn-xs">
 															Build Separate Timeline
-														</a>
+														</a>-->
 													</div>
 												</div>
 											</div>
@@ -305,14 +288,12 @@
 	</div>
 </div>
 
-
-<!--
 <div id="phaseModal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Phase 1</h4>
+        <h4 class="modal-title">Phase</h4>
       </div>
       <div class="modal-body">
 				<form class="form-horizontal" role="form">
@@ -321,12 +302,32 @@
 						  <div class="form-group">
 						    <label class="col-sm-2 control-label" for="phaseField1">Phase</label>
 						    <div class="col-sm-10">
-									<div class="input-group">
-								    <input type="text" id="phaseField" class="form-control" placeholder="Phase"  aria-describedby="basic-addon1">
-										<span class="input-group-btn">
-							        <button class="btn btn-default glyphicon glyphicon-plus-sign" type="button"></button>
-							      </span>
-									</div>
+									<select class="form-control" disabled>
+										<option selected="selected">Permit</option>
+										<option>Pre-site Inspection</option>
+										<option>Layout</option>
+										<option>Excavation</option>
+										<option>Plumbing</option>
+										<option>Steel</option>
+										<option>Electrical</option>
+										<option>Inspection Electrical</option>
+										<option>Shotcrete</option>
+										<option>Fountain</option>
+										<option>Water Fall</option>
+										<option>Waterline Tile</option>
+										<option>Coping</option>
+										<option>Deck</option>
+										<option>Landscape On-Site</option>
+										<option>Clean Up Shell</option>
+										<option>Barrier</option>
+										<option>Inspection Barrier</option>
+										<option>Pebble Tec</option>
+										<option>Plaster</option>
+										<option>Acid Wash</option>
+										<option>Automation Programming</option>
+										<option>Start Up</option>
+										<option>Final Walk Through</option>
+									</select>
 						    </div>
 						  </div>
 		          <div class="form-group">
@@ -338,7 +339,7 @@
 									  <option>Ready for Vendor</option>
 									  <option>Ready to Schedule</option>
 									  <option>Scheduled</option>
-										<option>Complete</option>
+										<option selected="selected">Complete</option>
 										<option>Cancelled</option>
 									</select>
 		            </div>
@@ -347,7 +348,7 @@
 						    <label class="col-sm-2 control-label" for="phaseField1">Vendor</label>
 						    <div class="col-sm-10">
 									<div class="input-group">
-								    <input type="text" id="phaseField0" class="form-control" placeholder="Vendor"  aria-describedby="basic-addon1">
+								    <input type="text" id="phaseField0" class="form-control" title="This is an auto complete field." placeholder="Vendor"  aria-describedby="basic-addon1" value="CLP Internal" />
 										<span class="input-group-btn">
 							        <a class="btn btn-default glyphicon glyphicon-plus-sign"></a>
 							      </span>
@@ -358,7 +359,7 @@
 						    <label class="col-sm-2 control-label" for="phaseField1">Scheduled</label>
 						    <div class="col-sm-10">
 									<div class="input-group">
-								    <input type="text" id="phaseField1" class="form-control" placeholder="Schedule Date"  aria-describedby="basic-addon1">
+								    <input type="text" id="phaseField1" class="form-control" placeholder="Schedule Date"  aria-describedby="basic-addon1" value="3/14/2016" />
 										<span class="input-group-btn">
 							        <button class="btn btn-default glyphicon glyphicon-calendar" type="button"></button>
 							      </span>
@@ -376,8 +377,7 @@
     </div>
   </div>
 </div>
-<!-- /.modal -->
-
+<!--
 		<div id="phaseAddModal" class="modal fade" tabindex="-1" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -428,10 +428,10 @@
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 						<button type="button" class="btn btn-primary">Add</button>
 					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-
+				</div>
+			</div>
+		</div>
+-->
 		<div id="phaseRemoveModal" class="modal fade" tabindex="-1" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
