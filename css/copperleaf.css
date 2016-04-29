@@ -67,11 +67,6 @@ hr {
     background-image: linear-gradient(to bottom,#f2f9f8 0,#e6f3f1 100%);
 }
 
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    background-color: #e6f3f1;
-    background-image: linear-gradient(to bottom,#f2f9f8 0,#e6f3f1 100%);
-}
-
 .panel-heading {
     font-size: 18px;
     font-weight: 700;
