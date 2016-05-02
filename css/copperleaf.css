@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
+﻿@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
 
 body, a, div, td, button, input {
     /* font-family: Tahoma, Verdana; */
@@ -70,4 +70,9 @@ hr {
 .panel-heading {
     font-size: 18px;
     font-weight: 700;
+}
+
+.alert {
+	position:absolute;
+    z-index:1;
 }
